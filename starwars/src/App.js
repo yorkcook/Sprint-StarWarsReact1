@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Characters from "./components/Characters";
+import "/Users/yorkcook/Desktop/LAMBDA/FRONT END/Sprint1/Sprint-Challenge-React-Wars/starwars/src/components/StarWars.css";
 
 class App extends Component {
   constructor() {
@@ -13,10 +14,6 @@ class App extends Component {
   componentDidMount() {
     this.getCharacters("https://swapi.co/api/people/");
   }
-
-  // Characters = ({ starwarsChars }) => {
-  //   return starwarsChars.map(name => [name]);
-  // };
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
