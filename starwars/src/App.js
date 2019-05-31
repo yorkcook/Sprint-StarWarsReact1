@@ -15,9 +15,9 @@ class App extends Component {
     this.getCharacters("https://swapi.co/api/people/");
   }
 
-  Characters = ({ starwarsChars }) => {
-    return starwarsChars.map(name => [name]);
-  };
+  // Characters = ({ starwarsChars }) => {
+  //   return starwarsChars.map(name => [name]);
+  // };
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
