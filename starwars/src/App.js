@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Characters from "./components/Characters";
 
 class App extends Component {
   constructor() {
@@ -7,11 +8,16 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+    console.log(this.state);
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters("https://swapi.co/api/people/");
   }
+
+  Characters = ({ starwarsChars }) => {
+    return starwarsChars.map(name => [name]);
+  };
 
   getCharacters = URL => {
     // feel free to research what this code is doing.
@@ -33,6 +39,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+
+        <Characters starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }
