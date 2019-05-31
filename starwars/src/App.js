@@ -8,7 +8,6 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
-    console.log(this.state);
   }
 
   componentDidMount() {
