@@ -2,7 +2,7 @@
 
 1.  What is React JS and what problems does it try and solve?
 
-    React JS solved the performance issue of using the DOM, which would render slowly. React JS uses the virtual DOM which only updates the changes to the tree, instead of the whole tree, which reduces the number of DOM refreshes, and increases performance speeds.
+    React JS solved the performance issue of using the DOM, which would render slowly. React JS uses the virtual DOM which only updates the changes to the tree, instead of the whole tree, which reduces the number of DOM refreshes, and increases performance speeds. How you write React webpages.
 
 2.  What does it mean to _think_ in react?
 
