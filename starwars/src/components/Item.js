@@ -1,7 +1,7 @@
 import React from "react";
 
-const Item = props => {
-  return <div>{props.character.name};</div>;
+const Item = ({ character }) => {
+  return <div>{character.name};</div>;
 };
 
 export default Item;
